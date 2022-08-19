@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { supabase } from 'lib/Store'
+import Image from 'next/image'
 
 const Home = () => {
   const [username, setUsername] = useState('')
@@ -24,8 +25,10 @@ const Home = () => {
   }
 
   return (
-    <div className="w-full h-full flex justify-center items-center p-4 bg-gray-300">
-      <div className="w-full sm:w-1/2 xl:w-1/3">
+    <div className="w-full h-full flex justify-center items-center p-4 transparent">
+      <Image src="/beams-home@95.jpeg" alt="bg" layout="fill" className='fixed z-0' />
+      <div className="w-full h-full flex flex-col justify-center sm:w-1/2 xl:w-1/3 z-10">
+        <div className="w-full flex flex-grow justify-center items-center text-6xl font-extrabold tracking-tight text-slate-900">Sponsio</div>
         <div className="border-teal p-8 border-t-12 bg-white mb-6 rounded-lg shadow-lg bg-white">
           <div className="mb-4">
             <label className="font-bold text-grey-darker block mb-2">Email</label>
@@ -71,6 +74,7 @@ const Home = () => {
             </a>
           </div>
         </div>
+        <div className="w-full flex flex-grow justify-center items-center text-6xl text-white font-bold"></div>
       </div>
     </div>
   )
