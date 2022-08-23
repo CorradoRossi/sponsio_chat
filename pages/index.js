@@ -26,18 +26,18 @@ const Home = () => {
 
   return (
     <div className="w-full h-full justify-center items-center p-4 bg-gradient-to-t from-indigo-100 to-white">
-    <div class="w-full h-14 border-b flex items-center px-6">
-        <a href="/" class="flex items-center space-x-1 mr-4">
-          <div class="rounded-lg bg-gray-800 text-white text-lg flex items-center justify-center font-semibold w-8 h-8"> AA </div>
-          <div class="font-medium text-xl tracking-normal"> Sponsio </div>
+    <div className="w-full h-14 border-b flex items-center px-6">
+        <a href="/" className="flex items-center space-x-1 mr-4">
+          <div className="rounded-lg bg-gray-800 text-white text-lg flex items-center justify-center font-semibold w-8 h-8"> AA </div>
+          <div className="font-medium text-xl tracking-normal"> Sponsio </div>
           </a>
-          {/*<div class="text-sm text-gray-400 hidden sm:block">
+          {/*<div className="text-sm text-gray-400 hidden sm:block">
             <a href="https://twitter.com/metastash" target="_blank">@metastash</a>
           </div>*/}
-          <div class="ml-auto flex items-center">
-            <a href="/create" class="router-link-active router-link-exact-active router-link" aria-current="page">Mission</a>
-            <a href="/edit" class="router-link ml-6 mr-4">Schedule</a>
-          {/*<button class="text-sm px-8 py-2 rounded-lg bg-gray-800 text-white ml-6 cursor-not-allowed"> Save </button>*/}
+          <div className="ml-auto flex items-center">
+            <a href="/mission" className="router-link-active router-link-exact-active router-link" aria-current="page">Mission</a>
+            <a href="/schedule" className="router-link ml-6 mr-4">Schedule</a>
+          {/*<button className="text-sm px-8 py-2 rounded-lg bg-gray-800 text-white ml-6 cursor-not-allowed"> Save </button>*/}
         </div>
       </div>
     <div className="w-full h-full flex justify-center items-center p-4 transparent">
