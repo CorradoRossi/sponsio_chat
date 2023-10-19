@@ -26,9 +26,9 @@ export default function Layout(props) {
   };
 
   return (
-    <main className="main flex h-screen w-screen overflow-hidden">
+    <main className="bg-gray-900 main flex h-screen w-screen overflow-hidden lg:justify-center">
       {/* Sidebar */}
-      <div className="bg-gray-900 flex flex-col w-screen">
+      <div className="bg-gray-900 flex flex-col">
         <nav
           className="w-screen lg:w-64 bg-gray-900 text-gray-100 overflow-scroll relative"
           style={{ minWidth: 150, maxHeight: "100vh" }}
@@ -67,7 +67,6 @@ export default function Layout(props) {
             </ul>
           </div>
         </nav>
-        {console.log(props)}
         {/* Messages */}
         <div className="flex-1 bg-gray-800 h-screen overflow-scroll">
           {props.children}
