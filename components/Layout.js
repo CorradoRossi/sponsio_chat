@@ -59,7 +59,7 @@ export default function Layout(props) {
                 <SidebarItem
                   channel={x}
                   key={x.id}
-                  isActiveChannel={x.id === props.activeChannelId}
+                  isActiveChannel={x.id == props.activeChannelId}
                   user={user}
                   userRoles={userRoles}
                 />
@@ -67,7 +67,7 @@ export default function Layout(props) {
             </ul>
           </div>
         </nav>
-
+        {console.log(props)}
         {/* Messages */}
         <div className="flex-1 bg-gray-800 h-screen overflow-scroll">
           {props.children}
@@ -83,6 +83,7 @@ const SidebarItem = ({ channel, isActiveChannel, user, userRoles }) => (
       <Link legacyBehavior href="/channels/[id]" as={`/channels/${channel.id}`}>
         <a className={isActiveChannel ? "font-bold" : ""}>{channel.slug}</a>
       </Link>
+      {console.log(channel, isActiveChannel, user, userRoles)}
       {channel.id !== 1 &&
         (channel.created_by === user?.id || userRoles.includes("admin")) && (
           <button onClick={() => deleteChannel(channel.id)}>
