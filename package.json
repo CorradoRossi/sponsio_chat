@@ -9,6 +9,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
     "@supabase/supabase-js": "^1.35.3",
     "next": "latest",
     "react": "^18.0.0",

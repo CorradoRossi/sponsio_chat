@@ -1,6 +1,7 @@
 import Layout from "~/components/Layout";
 import Message from "~/components/Message";
 import MessageInput from "~/components/MessageInput";
+import LightSidebar from "~/components/LightSidebar";
 import { useRouter } from "next/router";
 import { useStore, addMessage } from "~/lib/Store";
 import { useContext, useEffect, useRef } from "react";
@@ -32,6 +33,7 @@ const ChannelsPage = (props) => {
   // Render the channels and messages
   return (
     <Layout channels={channels} activeChannelId={channelId}>
+      <LightSidebar channels={channels} activeChannelId={channelId} />
       <div className="relative">
         <div className="Messages h-full pb-16">
           <div className="p-2 overflow-y-auto">
