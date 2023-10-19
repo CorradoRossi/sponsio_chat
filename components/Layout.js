@@ -69,7 +69,9 @@ export default function Layout(props) {
         </nav>
 
         {/* Messages */}
-        <div className="flex-1 bg-gray-800 h-screen">{props.children}</div>
+        <div className="flex-1 bg-gray-800 h-screen overflow-scroll">
+          {props.children}
+        </div>
       </div>
     </main>
   );
