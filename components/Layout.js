@@ -84,7 +84,6 @@ const SidebarItem = ({ channel, isActiveChannel, user, userRoles }) => (
       <Link legacyBehavior href="/channels/[id]" as={`/channels/${channel.id}`}>
         <a className={isActiveChannel ? "font-bold" : ""}>{channel.slug}</a>
       </Link>
-      {console.log(channel, isActiveChannel, user, userRoles)}
       {channel.id !== 1 &&
         (channel.created_by === user?.id || userRoles.includes("admin")) && (
           <button onClick={() => deleteChannel(channel.id)}>

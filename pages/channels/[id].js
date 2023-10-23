@@ -8,6 +8,7 @@ import { useContext, useEffect, useRef } from "react";
 import UserContext from "~/lib/UserContext";
 
 const ChannelsPage = (props) => {
+  console.log(props, "id.js")
   const router = useRouter();
   const { user, authLoaded, signOut } = useContext(UserContext);
   const messagesEndRef = useRef(null);

@@ -30,9 +30,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example(props) {
+export default function LightSideBar(props) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  console.log(props);
 
   return (
     <>
