@@ -26,7 +26,7 @@ export default function Layout(props) {
   };
 
   return (
-    <main className="bg-gray-900 main flex h-screen w-screen overflow-hidden lg:justify-center">
+    <main className="bg-gray-900 main flex h-screen w-screen overflow-hidden">
       {/* Sidebar */}
       <div className="bg-gray-900 flex flex-col">
         <nav
@@ -52,6 +52,7 @@ export default function Layout(props) {
                 Log out
               </button>
             </div>
+            {/**
             <hr className="m-2" />
             <h4 className="font-bold">Channels</h4>
             <ul className="channel-list">
@@ -65,6 +66,7 @@ export default function Layout(props) {
                 />
               ))}
             </ul>
+            */}
           </div>
         </nav>
         {/* Messages */}
